@@ -514,7 +514,7 @@ public class DeliveryDelayServlet extends HttpServlet {
      * @param useDurableSubscriber whether to create a durable or nondurable subscriber
      * @throws Exception
      */
-    public void testSetDeliveryDelayTopicClassicApi( TopicConnectionFactory connnectionFactory, Topic topic, boolean useDurableSubscriber) throws Exception {
+    private void testSetDeliveryDelayTopicClassicApi( TopicConnectionFactory connnectionFactory, Topic topic, boolean useDurableSubscriber) throws Exception {
 
         boolean testFailed = false;
     	String durableSubscriberName = "dursub";

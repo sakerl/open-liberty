@@ -164,6 +164,7 @@ public class DeliveryDelayServlet extends HttpServlet {
         return numMsgs;
     }
 
+    // Default value for deliveryDelay. Used as a basis for the delay used in different tests.
     private static final long deliveryDelay = 10000;
 
     private void sendAndCheckDeliveryTime(

@@ -31,8 +31,10 @@
   <wasJmsEndpoint id="InboundJmsCommsEndpoint" host="*" wasJmsPort="${bvt.prop.jms}" wasJmsSSLPort="${bvt.prop.jms.ssl}" />
 
   <!-- Overriding the values of the properties used for httpEndpoint port configuration in fatTestPorts.xml -->
-  <variable name="bvt.prop.HTTP_default"         value="${bvt.prop.http.1}" />
-  <variable name="bvt.prop.HTTP_default.secure"  value="${bvt.prop.http.1.ssl}" />
+<!-- <variable name="bvt.prop.HTTP_default"         value="${bvt.prop.http.1}" />
+  <variable name="bvt.prop.HTTP_default.secure"  value="${bvt.prop.http.1.ssl}" /> -->
+  <variable name="bvt.prop.HTTP_default"         value="8030" />
+  <variable name="bvt.prop.HTTP_default.secure"  value="8040" />
 
   <keyStore location="${server.output.dir}/resources/security/mykey.jks" password="{xor}NDombm1s" id="defaultKeyStore"/>
 
